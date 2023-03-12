@@ -9,15 +9,19 @@
 
         body {
             font-family: Arial;
-            padding: 10px;
-            background: #f1f1f1;
+            padding: 30px;
+            background-image: url("desktop.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1500px;
+            height: 1080px;
         }
         /* Header/Blog Title */
 
         .header {
             padding: 30px;
             text-align: center;
-            background: white;
+            background: rgb(157, 154, 154);
         }
 
         .header h1 {
@@ -27,14 +31,14 @@
 
         .topnav {
             overflow: hidden;
-            background-color: #333;
+            background-color: #8b8787;
         }
         /* Style the topnav links */
 
         .topnav a {
             float: left;
             display: block;
-            color: #f2f2f2;
+            color: #faf8f8;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -49,7 +53,7 @@
 /* Style The Dropdown Button */
 
         .dropbtn {
-            background-color: #4CAF50;
+            background-color: #1d1d1d;
             color: white;
             padding: 16px;
             font-size: 16px;
@@ -68,7 +72,7 @@
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+            min-width: 60px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
@@ -76,14 +80,14 @@
 
         .dropdown-content a {
             color: black;
-            padding: 12px 16px;
+            padding: 16px 16px;
             text-decoration: none;
             display: block;
         }
         /* Change color of dropdown links on hover */
 
         .dropdown-content a:hover {
-            background-color: #f1f1f1
+            background-color: #8f8888
         }
         /* Show the dropdown menu on hover */
 
@@ -93,20 +97,7 @@
         /* Change the background color of the dropdown button when the dropdown content is shown */
 
         .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
-
-        ul {
-            border: 1px solid #555;
-        }
-
-        li {
-            text-align: center;
-            border-bottom: 1px solid #555;
-        }
-
-        li:last-child {
-            border-bottom: none;
+            background-color: #2b2e2b;
         }
         /* Left column */
 
@@ -117,22 +108,22 @@
         /* Right column */
 
         .rightcolumn {
-            float: left;
-            width: 25%;
-            background-color: #f1f1f1;
-            padding-left: 20px;
+            float: right;
+            width: 75%;
+            background-color: #6d6d6d;
+            padding-left: 50px;
         }
         /* Fake image */
 
         .fakeimg {
-            background-color: #aaa;
+            background-color: #f4f3f3;
             width: 100%;
             padding: 20px;
         }
         /* Add a card effect for articles */
 
         .card {
-            background-color: white;
+            background-color: rgb(149, 148, 148);
             padding: 20px;
             margin-top: 20px;
         }
@@ -148,7 +139,7 @@
         .footer {
             padding: 20px;
             text-align: center;
-            background: #ddd;
+            background: #5d5c5c;
             margin-top: 20px;
         }
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -164,7 +155,7 @@
 
         @media screen and (max-width: 400px) {
             .topnav a {
-                float: none;
+                float: center;
                 width: 100%;
             }
         }
@@ -181,61 +172,38 @@
     <div class="dropdown">
         <button class="dropbtn">MENU</button>
         <div class="dropdown-content">
-            <a href="#main">HOME</a>
-            <a href="#services">SERVICES</a>
-            <a href="#Payments">PAYMENT</a>
-            <a href="#index">EXIT</a>
-            </ul>
-        </div>
-
-        <div class="row">
-            <div class="leftcolumn">
-                <div class="card">
-                    <h2>We Create Websites</h2>
-                    <h5></h5>
-                    <p><img src="computer2.jpg" style="height:500px; width: 1000px"></p>
-
-                    <h2>We also Provide Webhosting</h2>
-                    <p><img src="vultr.png" style="height: 500px; width: 1000px"></p>
-                </div>
-
-                <div class="card">
-                    <h2></h2>
-                    <h5></h5>
-                    <img src="" style=""></div>
-                <p></p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h3></h3>
-            <div class="">
-                <p></p>
-            </div>
-            <div class="">
-                <p></p>
-            </div>
-            <div class="">
-                <p></p>
-            </div>
-        </div>
-        <div class="card">
-            <h3>CONTACT INFORMATION</h3>
-            <p>Email me: WSewell36@proton.me</p>
-            <p><a href="">LinkedIn</a></p>
-            <p>
-                <a href=""></a>
-            </p>
-            <p><a href="https://github.com/Maverik0071">Github</a></p>
-            <p>
-                <a href=""></a>
-            </p>
+            <a href="main.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="Payments.html">PAYMENT</a>
         </div>
     </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>We Create Websites</h2>
+                <h5></h5>
+                <p><img src="computer2.jpg" style="height:500px; width: 1000px"></p>
+
+                <h2>We also Provide Webhosting</h2>
+                <p><img src="vultr.png" style="height: 500px; width: 1000px"></p>
+            </div>
+
+            <div class="card">
+                <h3>CONTACT INFORMATION</h3>
+                <p>Email me: WSewell36@proton.me</p>
+                <p><a href="">LinkedIn</a></p>
+
+                <p><a href="https://github.com/Maverik0071">Github</a></p>
+                <p>
+                    <a href=""></a>
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
-        <h2>@MavrykTek 2023</h2>
+        <h2>@Mavryk Tek 2023</h2>
     </div>
 
 </body>
