@@ -6,91 +6,125 @@
         * {
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: Arial;
+            padding: 30px;
+            background-image: url("desktop.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1600px;
+            height: 1080px;
+        }
+        
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
             padding: 10px;
-            background: #f1f1f1;
         }
         /* Header/Blog Title */
-
+        
         .header {
             padding: 30px;
             text-align: center;
-            background: white;
+            background: rgb(255, 255, 255);
         }
-
+        
         .header h1 {
             font-size: 50px;
         }
         /* Style the top navigation bar */
-
+        
         .topnav {
             overflow: hidden;
-            background-color: #333;
+            background-color: #2c85c5;
         }
         /* Style the topnav links */
-
+        
         .topnav a {
             float: left;
             display: block;
-            color: #f2f2f2;
+            color: #378bec;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
         /* Change color on hover */
-
+        
         .topnav a:hover {
-            background-color: #ddd;
+            background-color: #1499e0;
+            color: rgb(222, 217, 217);
+        }
+        /* Create two unequal columns that floats next to each other *
+/* Style The Dropdown Button */
+        
+        .dropbtn {
+            background-color: #2525e6;
+            color: rgb(250, 250, 251);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(100, 95, 243, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
             color: black;
+            padding: 16px 16px;
+            text-decoration: none;
+            display: block;
         }
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-
-        .leftcolumn {
-            float: left;
-            width: 75%;
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #8f8888
         }
-        /* Right column */
-
-        .rightcolumn {
-            float: left;
-            width: 25%;
-            background-color: #f1f1f1;
-            padding-left: 20px;
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
-        /* Fake image */
-
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        
+        .dropdown:hover .dropbtn {
+            background-color: #2b2e2b;
         }
         /* Add a card effect for articles */
-
+        
         .card {
             background-color: white;
+            float: center;
             padding: 20px;
             margin-top: 20px;
         }
-        /* Clear floats after the columns */
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
         /* Footer */
-
+        
         .footer {
             padding: 20px;
             text-align: center;
-            background: #ddd;
-            margin-top: 20px;
+            background: #fcfbfb;
+            margin-top: 30px;
         }
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-
+        
         @media screen and (max-width: 800px) {
             .leftcolumn,
             .rightcolumn {
@@ -99,10 +133,10 @@
             }
         }
         /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-
+        
         @media screen and (max-width: 400px) {
             .topnav a {
-                float: none;
+                float: center;
                 width: 100%;
             }
         }
@@ -112,61 +146,46 @@
 <body>
 
     <div class="header">
-        <h1> Welcome to WMSComputing </h1>
-        <p>"Helping you for all you Computer Needs"</p>
+        <h1> Mavryk Tek </h1>
+        <h3>"We help you to just Breathe"</p>
     </div>
 
-    <div class="topnav">
-        <a href="main.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about_me.html">About Me</a>
-        <a href="Payments.html">Payment and Donations</a>
-        <a href="intro.html" style="float:right">Exit</a>
-    </div>
-
-    <div class="">
-        <center>
-            <div class="">
-                <div class="card">
-        </center>
-        <center>
-            <h2></h2>
-        </center>
-        <h5></h5>
-        <center><img src="PaymentInnovation_cyan.png" style="height:600px; width: 600px"></center>
-        <h1>
-            <center> I take payment or donations through Paypal or Cashapp Paypal: WSewell1986@gmail.com or Cashapp: $WSewell8
-        </h1>
-        </center>
-        </p>
+    <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+            <a href="main.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="Payments.html">PAYMENT</a>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>
+                    <center>PAYMENTS</h2>
+                </center>
+            </div>
         </div>
-        <div class="">
-            <div class="">
-                <h2></h2>
-                <img src="" style="></div>
-      <p></p>
     </div>
-    <div class=" card ">
-      <h3></h3>
-      <div class=" "><p></p></div>
-      <div class=" "><p></p></div>
-      <div class=" "><p></p></div>
-    </div>
-    <div class="card ">
-      <h3></h3>
-      <p><a href=" "></a></p>
-      <p><a href=" "></a></p>
-      <p><a href=" "></a></p>
-      <p><a href=" "></a></p>
-      <p><a href=" "></a></p>
-    </div>
-  </div>
-</div>
 
-<div class="footer ">
-  <h2>@ WMSComputing 2021</h2>
-</div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card">
+                <center>
+                    <img src="payments2.png" style="height: 400px; width: 800px">
+                </center>
+                <img src="Cash_App-Logo.png" style="height: 200px; width: 300px">
+                <img src="bitcoin-logo.png" style="height: 200px; width: 300px">
+                <img src="Coinbase-Logo.png" style="height: 200px; width: 300px">
+                <img src="PayPal-Logo.png" style="height: 200px; width: 300px"></div>
+        </div>
+    </div>
+    </div>
 
+    <div class="footer">
+        <h1>@Mavryk Tek 2023</h1>
+    </div>
 </body>
+
 </html>
