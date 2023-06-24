@@ -1,59 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enter Mavryk Tek</title>
-</head>
-
-<style>
-    body {
-        background-image: url(desktop.jpg);
-        font-family: hack;
-        padding: 30px;
-        background-repeat: no-rep;
-        background-size: cover;
-        width: 1500px;
-        height: 1080px;
-    }
-</style>
-<center>
     <style>
-        .word {
-            color: #000;
+        * {
+            box-sizing: border-box;
         }
         
-        .word:before {
-            color: #434242;
-            font-size: 80px;
-            content: "Thank You for Sending MavTek your message.We will get back to you in 24 to 48 hours.";
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background-image: url("desktop.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1500px;
+            height: 1080px;
+        }
+        /* Header/Blog Title */
+        
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: rgb(251, 251, 251);
+        }
+        
+        .header h1 {
+            font-size: 50px;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #fefefe;
+        }
+        /* Style the topnav links */
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #faf8f8;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: rgb(222, 217, 217);
+        }
+        /* Create two unequal columns that floats next to each other *
+/* Style The Dropdown Button */
+        
+        .dropbtn {
+            background-color: #2525e6;
+            color: rgb(250, 250, 251);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(100, 95, 243, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+            padding: 16px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #8f8888
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        
+        .dropdown:hover .dropbtn {
+            background-color: #2b2e2b;
+        }
+        /* Add a card effect for articles */
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Right column */
+        
+        .rightcolumn {
+            float: right;
+            width: 45%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #fcfbfb;
+            margin-top: 10px;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: center;
+                width: 100%;
+            }
         }
     </style>
+</head>
 
-    <body>
-        <center>
-            <div class="word">
-                <h2></h2>
-            </div>
-    </body>
-    </center>
+<body>
+
+    <div class="header">
+        <h1> Welcome to MAVRYK Tek </h1>
+        <h3>"We help you to just Breathe"</p>
     </div>
 
-    <center>
-        <a href=" main.html">
-            <img src="mavryk_tek_logo.png " width="800 " height="800 ">
-    </center>
-    </a>
-
-    <br>
-    <div class="row">
-        <div class="footer">
-            <h1>@Mavryk Tek 2023</h1>
+    <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+            <a href="main.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="Payments.html">PAYMENT</a>
         </div>
     </div>
 
-    </body>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <center>
+                    <h2>We Create Websites</h2>
+                </center>
+                <br>
+                <div class="rightcolumn">
+                    <h4>Welcome to Mavryk Tek. Here we provide making websites for that those that do not</h4>
+                    <h4>have the time to make them whether it is school, family, emergency, or you just need</h4>
+                    <h4>something in a very special way that those websites cannot do. We offer these services to help.</h4>
+                    <br></div>
+                <div class="rightcolumn"></div>
+                <img src="computer2.jpg" style="height:500px; width: 700px "></div>
+
+
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <center>
+                            <h2>We also Provide Webhosting</h2>
+                        </center>
+                        <br>
+                        <div class="rightcolumn">
+                            <h3> We the website that we have made for you on</h3>
+                            <h3><a href="https://www.vultr.com/ ">vultr</a>. The webhosting is free for one month, then after that we will </h3>
+                            <h3>start up a payment plan so that it ca be paid for. Every website is different and the cost depends on how </h3>
+                            <h3>much code is inside the code. region, and what type of instance is chosen. </h3>
+                            <br></div>
+                        <div class="rightcolumn"></div>
+                        <img src="vultr.png" style="height: 500px; width: 700px "></div>
+
+
+                    <div class="row">
+                        <div class="leftcolumn">
+                            <div class="card">
+                                <center>
+                                    <h2> We also look at servers</h2>
+                                </center>
+                                <br>
+                                <div class="rightcolumn">
+                                    <h4>Welcome to Mavtek. Here we provide making websites for that those that do not</h4>
+                                    <h4>have the time to make them whether it is school, family, emergency, or you just need</h4>
+                                    <h4>something in a very special way that those websites cannot do. We offer these services to help.</h4>
+                                    <br></div>
+                                <div class="rightcolumn"></div>
+                                <img src="server.jpg" style="height: 500px; width: 700px"></div>
+
+                            <div class="row">
+                                <div class="leftcolumn">
+                                    <div class="card">
+                                        <center>
+                                            <h1>CONTACT INFORMATION</h1>
+                                            <br>
+                                            <h3>Email me: WSewell36@proton.me</h3>
+                                            <p><a href="https://www.linkedin.com/in/william-sewell-536484186/ ">Linkedin</a></p>
+                                            <p><a href="https://github.com/Maverik0071 ">Github</a></p>
+                                        </center>
+                                    </div>
+                                </div>
+
+                                <div class="footer ">
+                                    <h1>@Mavryk Tek 2023</h1>
+                                </div>
+
+</body>
 
 </html>
